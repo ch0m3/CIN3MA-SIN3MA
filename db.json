@@ -1,0 +1,25 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Black Panther",
+      "price": 800,
+      "availableSeats": 50,
+      "poster": "https://media.istockphoto.com/id/1186122638/photo/black-panther-with-a-black-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=BPg2CdvvBzmN0IECuJ4Y_53uKBRAW75uisuJfm-Zugk="
+    },
+   {
+      "id": 2,
+      "title": "Titanic",
+      "price": 750,
+      "availableSeats": 50,
+      "poster": "https://media.istockphoto.com/id/2176086241/photo/historic-passenger-ship-rms-titanic-and-iceberg.webp?a=1&b=1&s=612x612&w=0&k=20&c=pZEo5wrCgbzm0dPTwvH20rYdsqFGMhAf-1qfck1Frwo="
+    },
+    {
+      "id": 3,
+      "title": "Avatar 2",
+      "price": 1000,
+      "availableSeats": 40,
+      "poster": "https://images.unsplash.com/photo-1485795959911-ea5ebf41b6ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyJTIwbW92aWV8ZW58MHx8MHx8fDA%3D"
+    }
+  ]
+}
