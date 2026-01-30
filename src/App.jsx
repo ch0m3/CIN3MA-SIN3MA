@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 
 import MovieList from "./Components/MovieList";
 import MovieDetails from "./Components/MovieDetails";
+import './App.css'
+import { Header } from './Components/Header'
+import { NavBar } from './Components/NavBar'
+import { Tickets } from './Components/Tickets'
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -25,6 +29,13 @@ function App() {
       </Routes>
     </Router>
   );
+    <>
+      <Header/>
+      
+      <NavBar/>
+      <Tickets/>
+    </>
+  )
 }
 
 export default App;
