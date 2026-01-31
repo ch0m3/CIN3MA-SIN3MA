@@ -1,12 +1,14 @@
-export function NavBar ({about, movies, admin, home}){
+export function NavBar (){
     return(
      <nav className="app-nav">
          <div className="nav-list">
+            
+     
+        <button>Home</button>
+        <button>About</button>
+        <button>Movies</button>
+        <button>Admin</button>
         
-          <button className={home}>Home</button>
-          <button className={about}>About</button>
-          <button className={movies}>Movies</button>
-          <button className={admin}>Admin</button>
           <section></section>
           <p>We are a small cinema focused on promoting local filmmakers, journalists and the creative sector in all forms</p>
         
@@ -14,6 +16,6 @@ export function NavBar ({about, movies, admin, home}){
 
 
     </nav>
-    )
+    );
 
 }

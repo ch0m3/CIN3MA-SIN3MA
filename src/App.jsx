@@ -20,19 +20,26 @@ function App() {
 
   return (
     <Router>
+      <Header />
+      <NavBar />  
        <Header/>
        <NavBar/>      
       <Routes>
-        {/* Home page – list of movies */}
+    
+       {/* Home page – list of movies */}
         <Route path="/" element={<MovieList movies={movies} />} />
 
         {/* Movie details page */}
         <Route path="/movies/:id" element={<MovieDetails movies={movies} />} />
+         <Route path="/tickets" element={<Tickets />} />
         {/* Tickets page */}
         {/* <Tickets/> */}
       </Routes>
+
+      <Tickets/>
     </Router>
   );
+    
    
   
 }
