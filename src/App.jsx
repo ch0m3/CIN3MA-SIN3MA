@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import MovieList from "./Components/MovieList";
 // import MovieDetails from "./Components/MovieDetails";
+import Admin from "./Components/Admin/Admin";
 import './App.css'
 import { Header } from './Components/Header'
 import { NavBar } from './Components/NavBar'
@@ -28,6 +29,7 @@ function App() {
        {/* Home page – list of movies */}
        <Route path="/about" element={<About />} />
         <Route path="/" element={<MovieList movies={movies} />} />
+        <Route path="/admin" element={<Admin />} />
 
         {/* Movie details page */}
         {/* <Route path="/movies/:id" element={<MovieDetails movies={movies} />} /> */}
