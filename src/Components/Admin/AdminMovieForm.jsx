@@ -4,6 +4,7 @@ function AdminMovieForm({ onMovieAdded }) {
   const [title, setTitle] = useState("");
   const [poster, setPoster] = useState("");
   const [price, setPrice] = useState("");
+  const [id, setId] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -12,6 +13,7 @@ function AdminMovieForm({ onMovieAdded }) {
       title,
       poster,
       price,
+      id,
     };
 
     fetch("http://localhost:3001/movies", {
@@ -26,6 +28,7 @@ function AdminMovieForm({ onMovieAdded }) {
         setTitle("");
         setPoster("");
         setPrice("");
+        setId("");
         onMovieAdded();
       });
   }
@@ -55,6 +58,13 @@ function AdminMovieForm({ onMovieAdded }) {
         placeholder="price"
         value={price}
         onChange={(e) => setPrice(e.target.value)}
+        required
+      />
+      <input
+        type="number"
+        placeholder="id"
+        value={id}
+        onChange={(e) => setId(e.target.value)}
         required
       />
 

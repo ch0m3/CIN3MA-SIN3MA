@@ -2,10 +2,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import MovieList from "./Components/MovieList";
-// import MovieDetails from "./Components/MovieDetails";
+import MovieDetails from "./Components/MovieDetails";
 import Admin from "./Components/Admin/Admin";
 import './App.css'
 import { Header } from './Components/Header'
+import Home from "./Components/Home";
 import { NavBar } from './Components/NavBar'
 import { Tickets } from './Components/Tickets'
 import { About } from "./Components/About";
@@ -27,12 +28,14 @@ function App() {
       <Routes>
     
        {/* Home page – list of movies */}
+       <Route path="/home" element={<Home />} />
        <Route path="/about" element={<About />} />
         <Route path="/" element={<MovieList movies={movies} />} />
         <Route path="/admin" element={<Admin />} />
 
         {/* Movie details page */}
-        {/* <Route path="/movies/:id" element={<MovieDetails movies={movies} />} /> */}
+
+        <Route path="/movies/:id" element={<MovieDetails movies={movies} />} />
          <Route path="/tickets" element={<Tickets />} />
         {/* Tickets page */}
         {/* <Tickets/> */}
