@@ -2,11 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import MovieList from "./Components/MovieList";
-import MovieDetails from "./Components/MovieDetails";
+// import MovieDetails from "./Components/MovieDetails";
 import './App.css'
 import { Header } from './Components/Header'
 import { NavBar } from './Components/NavBar'
 import { Tickets } from './Components/Tickets'
+import { About } from "./Components/About";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -21,22 +22,21 @@ function App() {
   return (
     <Router>
       <Header />
-      <NavBar />  
-       <Header/>
-       <NavBar/>      
+      <NavBar />       
       <Routes>
     
        {/* Home page – list of movies */}
+       <Route path="/about" element={<About />} />
         <Route path="/" element={<MovieList movies={movies} />} />
 
         {/* Movie details page */}
-        <Route path="/movies/:id" element={<MovieDetails movies={movies} />} />
+        {/* <Route path="/movies/:id" element={<MovieDetails movies={movies} />} /> */}
          <Route path="/tickets" element={<Tickets />} />
         {/* Tickets page */}
         {/* <Tickets/> */}
       </Routes>
 
-      <Tickets/>
+      
     </Router>
   );
     

@@ -1,16 +1,36 @@
+import { NavLink } from "react-router-dom";
 export function NavBar (){
     return(
      <nav className="app-nav">
          <div className="nav-list">
             
      
-        <button>Home</button>
-        <button>About</button>
-        <button>Movies</button>
-        <button>Admin</button>
+        <button>
+          <NavLink to="/home" className="nav-btn">
+            Home
+          </NavLink>
+        </button>
         
-          <section></section>
-          <p>We are a small cinema focused on promoting local filmmakers, journalists and the creative sector in all forms</p>
+
+        <button>
+             <NavLink to="/about" className="nav-btn">
+                About
+            </NavLink>
+        </button>
+           
+        <button>
+            <NavLink to="/" className="nav-btn">
+                Movies
+            </NavLink>
+        </button>
+
+        <button>
+             <NavLink to="/admin" className="nav-btn">
+               Admin
+             </NavLink>
+        </button>
+        
+         
         
          </div>
 

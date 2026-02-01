@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./MovieList.css";
+import { Tickets } from "./Tickets";
 
 function MovieList({ movies }) {
   return (
@@ -23,6 +24,7 @@ function MovieList({ movies }) {
             <Link to={`/movies/${movie.id}`}>
               <button className="details-btn">View Details</button>
             </Link>
+            <Tickets/>
           </div>
         ))}
       </div>
