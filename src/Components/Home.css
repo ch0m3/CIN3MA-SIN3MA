@@ -1,0 +1,70 @@
+.home {
+  min-height: 90vh;
+  background-image: url("/cinema-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  margin: 30px;                 
+  padding: 60px;
+  margin-top: 40px;
+
+  border-radius: 80px;         
+  overflow: hidden;             
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+
+
+/* Optional dark overlay effect */
+.home::before {
+  content: "";
+  margin-top: auto;
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.home * {
+  position: relative;
+  z-index: 1;
+}
+
+.home-actions button {
+  background: crimson;
+  color: white;
+  border: auto;
+    padding: 12px 24px;
+    margin: 10px;
+}
+
+.home-actions button:hover {
+  background: darkred;
+}
+.home {
+  position: relative;
+}
+.home {
+  min-height: 100vh;
+  margin-top: auto;
+  background: linear-gradient(135deg, #000000, #2c2c2c);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home h1 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.home-actions button {
+  backdrop-filter: blur(6px);
+}
