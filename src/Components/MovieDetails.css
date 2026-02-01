@@ -1,0 +1,19 @@
+.movie-details { display: flex; gap: 40px; padding: 40px; align-items: center; justify-content: center; }
+
+ .movie-image { width: 250px; border-radius: 10px; }
+
+  .movie-info { max-width: 400px; }
+
+   .movie-info h2 { font-size: 28px; margin-bottom: 10px; }
+
+    .movie-info p { font-size: 18px; margin-bottom: 15px; }
+
+     .movie-details { display: flex; gap: 40px; padding: 40px; align-items: center; justify-content: center; } 
+
+     .movie-image { width: 250px; border-radius: 10px; }
+
+      .movie-info { max-width: 400px; } 
+
+      .movie-info h2 { font-size: 28px; margin-bottom: 10px; }
+      
+       .movie-info p { font-size: 18px; margin-bottom: 15px; }
